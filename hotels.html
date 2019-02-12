@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Бронирование гостиниц в Седоне</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="background-container">
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item">
+              <a class="main-navigation-item-link" href="#">Информация</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-item-link" href="#">Фото и видео</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-item-link" href="#">Карта штата</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-item-link" href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 class="visually-hidden">Все предложения для отдыха в Седоне</h1>
+        <form class="sort" action="https://echo.htmlacademy.ru" method="post">
+          <h5 class="sort-column-title">Инфраструктура</h5>
+          <ul class="sort-column">
+            <li class="sort-column-item">
+              <label for="sort-item-1" class="sort-column-item">Бассейн</label>
+              <input class="visually-hidden" id="sort-item-1" type="checkbox" name="Бассейн">
+            </li>
+            <li class="sort-column-item">
+              <label for="sort-item-2" class="sort-column-item">Парковка</label>
+              <input class="visually-hidden" id="sort-item-2" type="checkbox" name="Парковка">
+            </li>
+            <li class="sort-column-item">
+              <label for="sort-item-3" class="sort-column-item">Wi-fi</label>
+              <input class="visually-hidden" id="sort-item-3" type="checkbox" name="Wi-fi">
+            </li>
+          </ul>
+          <h5 class="sort-column-title">Тип жилья</h5>
+          <ul class="sort-column">
+            <li class="sort-column-item">
+              <label for="sort-item-4" class="sort-column-item">Гостиница</label>
+              <input class="visually-hidden" id="sort-item-4" type="checkbox" name="Гостиница">
+            </li>
+            <li class="sort-column-item">
+              <label for="sort-item-5" class="sort-column-item">Мотель</label>
+              <input class="visually-hidden" id="sort-item-5" type="checkbox" name="Мотель">
+            </li>
+            <li class="sort-column-item">
+              <label for="sort-item-6" class="sort-column-item">Апартаменты</label>
+              <input class="visually-hidden" id="sort-item-6" type="checkbox" name="Апартаменты">
+            </li>
+          </ul>
+          <div class="sort-column sort-column-cost">
+            <h5 class="sort-column-title">Стоимость в сутки (р):</h5>
+            <p class="sort-column-cost-label">
+              <span class="sort-column-cost-label-left">От 0</span>
+              <span>до 3000</span>
+            </p>
+            <div class="sort-column-cost-slider">
+              <div class="sort-column-cost-slider-min"></div>
+              <div class="sort-column-cost-slider-max"></div>
+            </div>
+            <button class="sort-button" type="submit">Показать</button>
+          </div>
+        </form>
+        <div class="sort-results">
+          <h4 class="sort-results-label">Найдено: 3</h4>
+          <h6 class="sort-results-title">Сортировка:</h6>
+          <ul class="sort-results-list">
+
+            <li class="sort-results-item">
+              <a class="sort-results-item-link" href="#">По цене</a>
+            </li>
+            <li class="sort-results-item">
+              <a class="sort-results-item-link" href="#">По типу</a>
+            </li>
+            <li class="sort-results-item">
+              <a class="sort-results-item-link" href="#">По рейтингу</a>
+            </li>
+          </ul>
+          <div class="sort-results-direction">
+            <a class="sort-results-direction-arrow arrow-top" href="#">
+              <svg></svg>
+            </a>
+            <a class="sort-results-direction-arrow arrow-bottom" href="#">
+              <svg></svg>
+            </a>
+          </div>
+        </div>
+        <table class="results-view">
+          <tbody class="card-item">
+            <tr class="cart-item-row">
+              <td colspan="2" class="card-item-col card-item-title">
+                <h4>Amara Resort & Spa</h4>
+              </td>
+              <td class="card-item-col card-item-stars"></td>
+            </tr>
+            <tr class="cart-item-row">
+              <td class="card-item-col card-item-subtitle">Гостиница</td>
+              <td class="card-item-col card-item-subtitle">от 4000 р.</td>
+            </tr>
+            <tr class="cart-item-row">
+              <td class="card-item-col card-item-button">
+                <a class="card-item-button-lite" href="#">Подробнее</a>
+              </td>
+              <td class="card-item-col card-item-button">
+                <a class="card-item-button-dark" href="#">Забронировать</a>
+              </td>
+              <td class="card-item-col card-item-rate">
+                <p class="card-item-rate-value">Рейтинг: 8,5</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+      <footer class="footer">
+        <a class="footer-visit-link" href="#">
+          <h4>#visitSEDONA</h4>
+        </a>
+        <ul class="social">
+          <li>
+            <a class="social-button" href="#" aria-label="Твиттер">
+              <svg></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#" aria-label="Фейсбук">
+              <svg></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#" aria-label="Ютуб">
+              <svg></svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-logo">
+          <p class="footer-logo-text">Website by</p>
+          <svg></svg>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

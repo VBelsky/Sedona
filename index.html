@@ -98,7 +98,9 @@
         </div>
       </main>
       <footer class="footer">
-        <a class="footer-visit-link" href="#"></a>
+        <a class="footer-visit-link" href="#">
+          <h4>#visitSEDONA</h4>
+        </a>
         <ul class="social">
           <li>
             <a class="social-button" href="#" aria-label="Твиттер">
@@ -121,6 +123,31 @@
           <svg></svg>
         </div>
       </footer>
+      <div class="booking-form-appearance">
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="arrival-date" class="booking-label">Дата заезда:</label>
+            <input class="common-input booking-arrival-date" id="arrival-date" type="date" name="arrival-date">
+            <span class="booking-error" aria-live="polite">Ошибка</span>
+          </p>
+          <p>
+            <label for="departure-date" class="booking-label">Дата выезда:</label>
+            <input class="common-input booking-departure-date" id="departure-date" type="date" name="departure-date">
+            <span class="booking-error" aria-live="polite">Ошибка</span>
+          </p>
+          <p>
+            <label for="adult-quantity" class="booking-label">Взрослые:</label>
+            <input class="common-input booking-adult-quantity" id="adult-quantity" type="text" name="adult-quantity" placeholder="2">
+            <span class="booking-error" aria-live="polite">Ошибка</span>
+          </p>
+          <p>
+            <label for="children-quantity" class="booking-label">Дети:</label>
+            <input class="common-input booking-children-quantity" id="children-quantity" type="text" name="children-quantity" placeholder="0">
+            <span class="booking-error" aria-live="polite">Ошибка</span>
+          </p>
+          <button class="booking-form-button" type="submit">Найти</button>
+        </form>
+      </div>
     </div>
   </div>
 </body>
