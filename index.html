@@ -93,32 +93,82 @@
           <h2 class="visually-hidden">Бронирование гостиницы</h2>
           <h3 class="booking-title header-3">Заинтересовались?</h3>
           <p class="booking-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="booking-main-button" type="button">Поиск гостиницы в Седоне</button>
-          <div class="booking-form booking-form-appearance">
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label for="arrival-date" class="booking-label">Дата заезда:</label>
-                <input class="common-input booking-arrival-date" id="arrival-date" type="date" name="arrival-date">
-                <span class="booking-error" aria-live="polite">Ошибка</span>
+          <a class="booking-main-button" href="form.html">Поиск гостиницы в Седоне</a>
+          <form class="booking-form booking-form-appearance" action="https://echo.htmlacademy.ru" method="post">
+            <div class="booking-form-group">
+              <label for="arrival-date" class="booking-label">Дата заезда:</label>
+              <input class="booking-input booking-date booking-arrival-date" id="arrival-date" type="date" name="arrival-date" value="2017-04-24">
+              <svg class="booking-date-calendar" width="21px" height="22px" viewBox="0 0 21 22">
+                <g>
+                  <path fill="#cacaca" d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689		c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501		C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75		c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689		c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938		v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                  <rect fill="#cacaca" x="4.594" y="8.225" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="4.594" y="11.668" width="2.625" height="2.067"/>
+                  <rect fill="#cacaca" x="4.594" y="15.112" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="9.188" y="15.112" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="9.188" y="11.668" width="2.625" height="2.067"/>
+                  <rect fill="#cacaca" x="9.188" y="8.225" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="13.781" y="15.112" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="13.781" y="11.668" width="2.625" height="2.067"/>
+                  <rect fill="#cacaca" x="13.781" y="8.225" width="2.625" height="2.066"/>
+                </g>
+              </svg>
+              <span class="booking-error" aria-live="polite">Ошибка</span>
+            </div>
+            <div class="booking-form-group">
+              <label for="departure-date" class="booking-label">Дата выезда:</label>
+              <input class="booking-input booking-date booking-departure-date" id="departure-date" type="date" name="departure-date" value="2017-07-04">
+              <svg class="booking-date-calendar" width="21px" height="22px" viewBox="0 0 21 22">
+                <g>
+                  <path fill="#cacaca" d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689		c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501		C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75		c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689		c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938		v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                  <rect fill="#cacaca" x="4.594" y="8.225" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="4.594" y="11.668" width="2.625" height="2.067"/>
+                  <rect fill="#cacaca" x="4.594" y="15.112" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="9.188" y="15.112" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="9.188" y="11.668" width="2.625" height="2.067"/>
+                  <rect fill="#cacaca" x="9.188" y="8.225" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="13.781" y="15.112" width="2.625" height="2.066"/>
+                  <rect fill="#cacaca" x="13.781" y="11.668" width="2.625" height="2.067"/>
+                  <rect fill="#cacaca" x="13.781" y="8.225" width="2.625" height="2.066"/>
+                </g>
+              </svg>
+              <span class="booking-error" aria-live="polite">Ошибка</span>
+            </div>
+            <div class="booking-form-group booking-form-group-quantity">
+              <label for="adult-quantity" class="booking-label">Взрослые:</label>
+              <p class="booking-quantity-group">
+                <svg class="booking-quantity-symbol booking-quantity-minus" width="401.991px" height="401.991px" viewBox="0 0 401.991 401.991">
+                  <g>
+                    <path fill="#A9A9A9" d="M394,154.174c-5.331-5.33-11.806-7.995-19.417-7.995H27.406c-7.611,0-14.084,2.665-19.414,7.995		C2.662,159.503,0,165.972,0,173.587v54.82c0,7.617,2.662,14.086,7.992,19.41c5.33,5.332,11.803,7.994,19.414,7.994h347.176		c7.611,0,14.086-2.662,19.417-7.994c5.325-5.324,7.991-11.793,7.991-19.41v-54.82C401.991,165.972,399.332,159.5,394,154.174z"/>
+                  </g>
+                </svg>
+                <input class="booking-input booking-quantity" id="adult-quantity" type="text" name="adult-quantity" value="2">
+                <svg class="booking-quantity-symbol booking-quantity-plus" width="401.994px" height="401.994px" viewBox="0 0 401.994 401.994">
+                  <g>
+                    <path fill="#A9A9A9" d="M394,154.175c-5.331-5.33-11.806-7.994-19.417-7.994H255.811V27.406c0-7.611-2.666-14.084-7.994-19.414		C242.488,2.666,236.02,0,228.398,0h-54.812c-7.612,0-14.084,2.663-19.414,7.993c-5.33,5.33-7.994,11.803-7.994,19.414v118.775		H27.407c-7.611,0-14.084,2.664-19.414,7.994S0,165.973,0,173.589v54.819c0,7.618,2.662,14.086,7.992,19.411		c5.33,5.332,11.803,7.994,19.414,7.994h118.771V374.59c0,7.611,2.664,14.089,7.994,19.417c5.33,5.325,11.802,7.987,19.414,7.987		h54.816c7.617,0,14.086-2.662,19.417-7.987c5.332-5.331,7.994-11.806,7.994-19.417V255.813h118.77		c7.618,0,14.089-2.662,19.417-7.994c5.329-5.325,7.994-11.793,7.994-19.411v-54.819C401.991,165.973,399.332,159.502,394,154.175z"/>
+                  </g>
+                </svg>
               </p>
-              <p>
-                <label for="departure-date" class="booking-label">Дата выезда:</label>
-                <input class="common-input booking-departure-date" id="departure-date" type="date" name="departure-date">
-                <span class="booking-error" aria-live="polite">Ошибка</span>
+              <span class="booking-error" aria-live="polite">Ошибка</span>
+            </div>
+            <div class="booking-form-group booking-form-group-quantity">
+              <label for="children-quantity" class="booking-label">Дети:</label>
+              <p class="booking-quantity-group">
+                <svg class="booking-quantity-symbol booking-quantity-minus" width="401.991px" height="401.991px" viewBox="0 0 401.991 401.991">
+                  <g>
+                    <path fill="#A9A9A9" d="M394,154.174c-5.331-5.33-11.806-7.995-19.417-7.995H27.406c-7.611,0-14.084,2.665-19.414,7.995		C2.662,159.503,0,165.972,0,173.587v54.82c0,7.617,2.662,14.086,7.992,19.41c5.33,5.332,11.803,7.994,19.414,7.994h347.176		c7.611,0,14.086-2.662,19.417-7.994c5.325-5.324,7.991-11.793,7.991-19.41v-54.82C401.991,165.972,399.332,159.5,394,154.174z"/>
+                  </g>
+                </svg>
+                <input class="booking-input booking-quantity" id="adult-quantity" type="text" name="adult-quantity" value="0">
+                <svg class="booking-quantity-symbol booking-quantity-plus" width="401.994px" height="401.994px" viewBox="0 0 401.994 401.994">
+                  <g>
+                    <path fill="#A9A9A9" d="M394,154.175c-5.331-5.33-11.806-7.994-19.417-7.994H255.811V27.406c0-7.611-2.666-14.084-7.994-19.414		C242.488,2.666,236.02,0,228.398,0h-54.812c-7.612,0-14.084,2.663-19.414,7.993c-5.33,5.33-7.994,11.803-7.994,19.414v118.775		H27.407c-7.611,0-14.084,2.664-19.414,7.994S0,165.973,0,173.589v54.819c0,7.618,2.662,14.086,7.992,19.411		c5.33,5.332,11.803,7.994,19.414,7.994h118.771V374.59c0,7.611,2.664,14.089,7.994,19.417c5.33,5.325,11.802,7.987,19.414,7.987		h54.816c7.617,0,14.086-2.662,19.417-7.987c5.332-5.331,7.994-11.806,7.994-19.417V255.813h118.77		c7.618,0,14.089-2.662,19.417-7.994c5.329-5.325,7.994-11.793,7.994-19.411v-54.819C401.991,165.973,399.332,159.502,394,154.175z"/>
+                  </g>
+                </svg>
               </p>
-              <p>
-                <label for="adult-quantity" class="booking-label">Взрослые:</label>
-                <input class="common-input booking-adult-quantity" id="adult-quantity" type="text" name="adult-quantity" placeholder="2">
-                <span class="booking-error" aria-live="polite">Ошибка</span>
-              </p>
-              <p>
-                <label for="children-quantity" class="booking-label">Дети:</label>
-                <input class="common-input booking-children-quantity" id="children-quantity" type="text" name="children-quantity" placeholder="0">
-                <span class="booking-error" aria-live="polite">Ошибка</span>
-              </p>
-              <button class="booking-form-button" type="submit">Найти</button>
-            </form>
-          </div>
+              <span class="booking-error" aria-live="polite">Ошибка</span>
+            </div>
+            <button class="booking-form-button" type="submit">Найти</button>
+          </form>
         </div>
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11012.202144471126!2d-111.81117031605446!3d34.857551855982635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1550255703196"></iframe>
