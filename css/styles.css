@@ -456,10 +456,6 @@ img {
   outline: none;
 }
 
-.booking-quantity {
-  text-align: center;
-}
-
 .booking-date::-webkit-inner-spin-button,
 .booking-date::-webkit-clear-button {
   display: none;
@@ -485,16 +481,20 @@ img {
   position: absolute;
   right: 10px;
   z-index: 0;
+  cursor: pointer;
+  fill: #cacaca;
 }
 
-.booking-input:hover + .booking-date-calendar path,
-.booking-input:hover + .booking-date-calendar rect {
+.booking-date-calendar:hover {
   fill: #000000;
 }
 
-.booking-input:active + .booking-date-calendar path,
-.booking-input:active + .booking-date-calendar rect {
+.booking-date-calendar:active {
   fill: #81b3d2;
+}
+
+.booking-quantity {
+  text-align: center;
 }
 
 .booking-quantity-group {
@@ -510,17 +510,18 @@ img {
   height: 38px;
   padding: 13px;
   cursor: pointer;
+  fill: #A9A9A9;
 }
 
 .booking-quantity-plus {
   right: 3px;
 }
 
-.booking-quantity-symbol:hover path {
+.booking-quantity-symbol:hover {
   fill: #000000;
 }
 
-.booking-quantity-symbol:active path {
+.booking-quantity-symbol:active {
   fill: #81B3D2;
 }
 
@@ -591,6 +592,7 @@ img {
   height: 48px;
   background-color: #81B3D2;
   margin-right: 6px;
+  fill: #ffffff;
 }
 
 .social-button:hover,
@@ -601,9 +603,6 @@ img {
 
 .social-button:active {
   background-color: #5496bd;
-}
-
-.social-button:active path {
   fill: #88B6D1;
 }
 
@@ -619,20 +618,91 @@ img {
   margin-left: 7px;
 }
 
-.footer-logo-link path,
-.footer-logo-link rect {
-  fill: #000000;
-}
-
-.footer-logo-link:hover path,
-.footer-logo-link:hover rect,
-.footer-logo-link:focus path,
-.footer-logo-link:focus rect {
+.footer-logo-link:hover,
+.footer-logo-link:hover,
+.footer-logo-link:focus,
+.footer-logo-link:focus {
   fill: #81b3d2;
   outline: none;
 }
 
-.footer-logo-link:active path,
-.footer-logo-link:active rect {
+.footer-logo-link:active,
+.footer-logo-link:active {
   fill: #bdbbbc;
+}
+
+/* Hotels Page */
+
+.sort {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: url("../img/inner-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 28px 0;
+}
+
+.sort-column,
+.sort-column-title {
+  color: #ffffff;
+}
+
+.sort-column {
+  max-width: 256px;
+  width: 100%;
+  padding-left: 72px;
+}
+
+.sort-column-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort-column-title {
+  margin-bottom: 25px;
+}
+
+.sort-column-item {
+  padding-left: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sort-column-item:last-child {
+  margin-bottom: 0;
+}
+
+.sort-column-item-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sort-column-item-label:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/icon-checkbox-off.svg");
+  background-repeat: no-repeat;
+  left: 0;
+}
+
+.sort-column-item-checkbox:focus + .sort-column-item-label::before {
+  outline: 2px solid #4D90FE;
+}
+
+.sort-column-item-checkbox:checked + .sort-column-item-label::before {
+  background-image: url("../img/icon-checkbox-on.svg");
+}
+
+.sort-column-item-checkbox:disabled + .sort-column-item-label::before {
+  background-image: url("../img/icon-checkbox-off-disabled.svg");
+}
+
+.sort-column-item-checkbox:checked:disabled + .sort-column-item-label::before {
+  background-image: url("../img/icon-checkbox-on-disabled.svg");
 }
