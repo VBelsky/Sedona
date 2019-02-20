@@ -10,11 +10,11 @@
 </head>
 <body>
   <div class="background-container">
-    <div class="container">
+    <div class="container inner-page">
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-navigation-logo" href="index.html">
-            <img src="img/logo.png" width="138px" height="70px" alt="Логотип City of Sedona">
+            <img src="img/logo.png" width="138" height="70" alt="Логотип City of Sedona">
           </a>
           <ul class="main-navigation-list">
             <li class="main-navigation-item">
@@ -27,7 +27,7 @@
               <a class="main-navigation-item-link" href="#">Карта штата</a>
             </li>
             <li class="main-navigation-item">
-              <a class="main-navigation-item-link" href="#">Гостиницы</a>
+              <a class="main-navigation-item-link main-navigation-item-link-current" href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -83,54 +83,111 @@
           </div>
         </form>
         <div class="sort-results">
-          <h4 class="sort-results-label header-4">Найдено: 3</h4>
-          <h6 class="sort-results-title header-6">Сортировка:</h6>
-          <ul class="sort-results-list">
-
-            <li class="sort-results-item">
-              <a class="sort-results-item-link" href="#">По цене</a>
+          <h4 class="sort-results-item sort-results-label header-4">Найдено: 3</h4>
+          <h6 class="sort-results-item sort-results-title header-6">Сортировка:</h6>
+          <ul class="sort-results-item sort-results-list">
+            <li class="sort-results-list-item">
+              <a class="sort-results-item-link sort-results-item-link-current" href="#">По цене</a>
             </li>
-            <li class="sort-results-item">
+            <li class="sort-results-list-item">
               <a class="sort-results-item-link" href="#">По типу</a>
             </li>
-            <li class="sort-results-item">
+            <li class="sort-results-list-item">
               <a class="sort-results-item-link" href="#">По рейтингу</a>
             </li>
           </ul>
-          <div class="sort-results-direction">
-            <a class="sort-results-direction-arrow arrow-top" href="#">
-              <svg></svg>
-            </a>
-            <a class="sort-results-direction-arrow arrow-bottom" href="#">
-              <svg></svg>
-            </a>
+          <a class="sort-results-button sort-results-button-direction-up" href="#">
+            <svg width="11px" height="10px" viewBox="0 0 11 10">
+              <use xlink:href="#icon-down-dir"/>
+            </svg>
+          </a>
+          <a class="sort-results-button sort-results-button-direction-down sort-results-button-current" href="#">
+            <svg width="11px" height="10px" viewBox="0 0 11 10">
+              <use xlink:href="#icon-down-dir"/>
+            </svg>
+          </a>
+        </div>
+        <div class="results-view">
+          <div class="card-item card-item-1">
+            <div class="card-item-row card-item-row-title">
+              <a class="card-item-title header-4" href="#">Amara Resort & Spa</a>
+              <div class="card-item-rate-stars">
+                <svg width="90px" height="17px" viewBox="0 0 90 17">
+                  <use xlink:href="#icon-star" x="0" y="0"/>
+                  <use xlink:href="#icon-star" x="24" y="0"/>
+                  <use xlink:href="#icon-star" x="48" y="0"/>
+                  <use xlink:href="#icon-star" x="72" y="0"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-item-row card-item-row-subtitle">
+              <p class="card-item-subtitle card-item-subtitle-label card-item-visual-column">Гостиница</p>
+              <p class="card-item-subtitle card-item-subtitle-price card-item-visual-column">от 4000 р.</p>
+            </div>
+            <div class="card-item-row card-item-row-buttons">
+              <p class="card-item-visual-column">
+                <a class="card-item-button card-item-button-more" href="#">Подробнее</a>
+              </p>
+              <p class="card-item-visual-column">
+                <a class="card-item-button card-item-button-booking" href="#">Забронировать</a>
+              </p>
+              <p class="card-item-rate">Рейтинг: 8,5</p>
+            </div>
           </div>
         </div>
-        <table class="results-view">
-          <tbody class="card-item">
-            <tr class="cart-item-row">
-              <td colspan="2" class="card-item-col card-item-title">
-                <h4 class="header-4">Amara Resort & Spa</h4>
-              </td>
-              <td class="card-item-col card-item-stars"></td>
-            </tr>
-            <tr class="cart-item-row">
-              <td class="card-item-col card-item-subtitle">Гостиница</td>
-              <td class="card-item-col card-item-subtitle">от 4000 р.</td>
-            </tr>
-            <tr class="cart-item-row">
-              <td class="card-item-col card-item-button">
-                <a class="card-item-button-lite" href="#">Подробнее</a>
-              </td>
-              <td class="card-item-col card-item-button">
-                <a class="card-item-button-dark" href="#">Забронировать</a>
-              </td>
-              <td class="card-item-col card-item-rate">
-                <p class="card-item-rate-value">Рейтинг: 8,5</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="results-view">
+          <div class="card-item card-item-2">
+            <div class="card-item-row card-item-row-title">
+              <a class="card-item-title header-4" href="#">Desert Quail Inn</a>
+              <div class="card-item-rate-stars">
+                <svg width="66px" height="17px" viewBox="0 0 66 17">
+                  <use xlink:href="#icon-star" x="0" y="0"/>
+                  <use xlink:href="#icon-star" x="24" y="0"/>
+                  <use xlink:href="#icon-star" x="48" y="0"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-item-row card-item-row-subtitle">
+              <p class="card-item-subtitle card-item-subtitle-label card-item-visual-column">Мотель</p>
+              <p class="card-item-subtitle card-item-subtitle-price card-item-visual-column">от 3000 р.</p>
+            </div>
+            <div class="card-item-row card-item-row-buttons">
+              <p class="card-item-visual-column">
+                <a class="card-item-button card-item-button-more" href="#">Подробнее</a>
+              </p>
+              <p class="card-item-visual-column">
+                <a class="card-item-button card-item-button-booking" href="#">Забронировать</a>
+              </p>
+              <p class="card-item-rate">Рейтинг: 8,9</p>
+            </div>
+          </div>
+        </div>
+        <div class="results-view">
+          <div class="card-item card-item-3">
+            <div class="card-item-row card-item-row-title">
+              <a class="card-item-title header-4" href="#">Villas At Poco Diablo</a>
+              <div class="card-item-rate-stars">
+                <svg width="42px" height="17px" viewBox="0 0 42 17">
+                  <use xlink:href="#icon-star" x="0" y="0"/>
+                  <use xlink:href="#icon-star" x="24" y="0"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-item-row card-item-row-subtitle">
+              <p class="card-item-subtitle card-item-subtitle-label card-item-visual-column">Апартаменты</p>
+              <p class="card-item-subtitle card-item-subtitle-price card-item-visual-column">от 2000 р.</p>
+            </div>
+            <div class="card-item-row card-item-row-buttons">
+              <p class="card-item-visual-column">
+                <a class="card-item-button card-item-button-more" href="#">Подробнее</a>
+              </p>
+              <p class="card-item-visual-column">
+                <a class="card-item-button card-item-button-booking" href="#">Забронировать</a>
+              </p>
+              <p class="card-item-rate">Рейтинг: 9,2</p>
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <a class="footer-item footer-visit-link" href="#">#visitSEDONA</a>
@@ -159,7 +216,7 @@
         </ul>
         <div class="footer-item footer-logo">
           <p class="footer-logo-label">Website by</p>
-          <a class="footer-logo-link" href="#" alt="Ссылка на HtmlAcademy">
+          <a class="footer-logo-link" href="#" aria-label="Ссылка на HtmlAcademy">
             <svg width="113px" height="39px" viewBox="0 0 113 39">
               <use xlink:href="#html-academy-logo"/>
             </svg>
@@ -194,7 +251,7 @@
       <path d="M394 154.175c-5.331-5.33-11.806-7.994-19.417-7.994H255.811V27.406c0-7.611-2.666-14.084-7.994-19.414C242.488 2.666 236.02 0 228.398 0h-54.812c-7.612 0-14.084 2.663-19.414 7.993-5.33 5.33-7.994 11.803-7.994 19.414v118.775H27.407c-7.611 0-14.084 2.664-19.414 7.994S0 165.973 0 173.589v54.819c0 7.618 2.662 14.086 7.992 19.411 5.33 5.332 11.803 7.994 19.414 7.994h118.771V374.59c0 7.611 2.664 14.089 7.994 19.417 5.33 5.325 11.802 7.987 19.414 7.987h54.816c7.617 0 14.086-2.662 19.417-7.987 5.332-5.331 7.994-11.806 7.994-19.417V255.813h118.77c7.618 0 14.089-2.662 19.417-7.994 5.329-5.325 7.994-11.793 7.994-19.411v-54.819c-.002-7.616-2.661-14.087-7.993-19.414z"/>
     </symbol>
 
-    <symbol id="icon-star" viewBox="0 0 18 17">
+    <symbol id="icon-star">
       <path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
     </symbol>
 
