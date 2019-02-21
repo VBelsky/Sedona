@@ -70,11 +70,17 @@
             </ul>
           </div>
           <div class="sort-column sort-column-cost">
-            <h5 class="sort-column-title header-5">Стоимость в сутки (р):</h5>
-            <p class="sort-column-cost-label">
-              <span class="sort-column-cost-label-left">От 0</span>
-              <span>до 3000</span>
-            </p>
+            <h5 class="sort-column-title sort-column-cost-title header-5">Стоимость в сутки (р):</h5>
+            <div class="sort-column-cost-range">
+              <p class="sort-column-cost-couple">
+                <label class="sort-column-cost-label" for="min-cost">от</label>
+                <input class="sort-column-cost-input" type="text" id="min-cost" name="min-cost" value="0">
+              </p>
+              <p class="sort-column-cost-couple">
+                <label class="sort-column-cost-label" for="max-cost">до</label>
+                <input class="sort-column-cost-input" type="text" id="max-cost" name="max-cost" value="3000">
+              </p>
+            </div>
             <div class="sort-column-cost-slider">
               <div class="sort-column-cost-slider-min"></div>
               <div class="sort-column-cost-slider-max"></div>
@@ -227,7 +233,7 @@
   </div>
 
   <!-- SVG Catalog -->
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
     <symbol id="icon-calendar" viewBox="0 0 21 22">
       <g>
         <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
