@@ -395,26 +395,45 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.booking-modal {
+  position: absolute;
+  top: calc(100%);
+  max-width: 568px;
+  z-index: 1;
+  visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1300px;
+}
+
+.booking-modal-show {
+  visibility: visible;
+}
+
 .booking-form {
+  color: #000000;
+  line-height: 26px;
+  font-weight: 700;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 568px;
-  width: 100%;
   padding: 55px;
-  color: #000000;
-  line-height: 26px;
-  font-weight: 700;
   background-color: #ffffff;
-  position: absolute;
-  top: calc(100%);
-  z-index: 1;
+  transform-style: preserve-3d;
+  transform: rotateX(-60deg);
+  transform-origin: 50% 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.booking-form-appearance {
+  transform: rotateX(0deg);
+  opacity: 1;
 }
 
 .booking-form-group {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
