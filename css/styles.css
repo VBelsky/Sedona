@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -285,29 +285,27 @@ img {
 .features-item:nth-child(7)::before,
 .features-item:nth-child(8)::before {
   content: "";
+  width: 75px;
+  height: 76px;
+  margin-left: -37px;
   position: absolute;
   background-repeat: no-repeat;
-  bottom: 200px;
+  background-position: bottom;
+  top: 55px;
 }
 
 .features-item:nth-child(6)::before {
   background-image: url("../img/icon-home.svg");
-  width: 75px;
-  height: 72px;
-  margin-left: -37px;
 }
 
 .features-item:nth-child(7)::before {
   background-image: url("../img/icon-food.svg");
   width: 74px;
-  height: 70px;
-  margin-left: -37px;
 }
 
 .features-item:nth-child(8)::before {
   background-image: url("../img/icon-gift.svg");
   width: 64px;
-  height: 76px;
   margin-left: -32px;
 }
 
@@ -675,6 +673,7 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
 }
 
 .sort-column-item-label:before {
